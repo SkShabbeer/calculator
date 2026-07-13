@@ -1,0 +1,259 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #220000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+/* ==========================
+   WRAPPER
+========================== */
+
+.calculator-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==========================
+   HEADING
+========================== */
+
+#typing {
+    color: #E59A14;
+    font-size: 2rem;
+    font-family: "Courier New", monospace;
+    margin-bottom: 20px;
+    border-right: 3px solid #E59A14;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ==========================
+   CALCULATOR
+========================== */
+
+#calculator {
+    width: 100%;
+    max-width: 420px;
+    background: #1f1f1f;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .45);
+}
+
+/* ==========================
+   DISPLAY
+========================== */
+
+#display {
+    width: 100%;
+    height: 90px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background: #f5f5f5;
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+/* ==========================
+   BUTTON GRID
+========================== */
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 20px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: none;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    background: #b39a9a;
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+/* ==========================
+   OPERATOR BUTTONS
+========================== */
+
+.operator_btn {
+    background: #E59A14;
+}
+
+.operator_btn:hover {
+    background: #C7820F;
+}
+
+/* ==========================
+   EQUAL BUTTON
+========================== */
+
+.equal_btn {
+    background: #000402;
+}
+
+.equal_btn:hover {
+    background: orange;
+}
+
+/* ==========================
+   HISTORY BUTTON
+========================== */
+
+#historyBtn {
+    font-size: 1.5rem;\
+}
+#historyBtn:hover {
+    background: #f8f8f6;
+}
+#historyBtn{
+    background:#E59A14;
+}
+
+/* ==========================
+   HISTORY POPUP
+========================== */
+
+#history {
+    display: none;
+    position: absolute;
+    top: 160px;
+    right: -250px;
+
+    width: 220px;
+
+    background: #1f1f1f;
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+}
+
+#history h3 {
+    text-align: center;
+    color: #E59A14;
+    margin-bottom: 10px;
+}
+
+#history p {
+    margin: 8px 0;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+/* ==========================
+   COPYRIGHT
+========================== */
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:900px) {
+
+    #history {
+        position: static;
+        width: 100%;
+        max-width: 420px;
+        margin-top: 20px;
+    }
+
+    #copyright {
+        position: static;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #typing {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    #calculator {
+        width: 100%;
+    }
+
+    #display {
+        height: 70px;
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    #keys {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 1.4rem;
+    }
+
+}
+
+#copyright {
+    margin-top: 15px;
+    text-align: center;
+    color: #9a9a9a;
+    font-size: 13px;
+    transition: .3s;
+}
