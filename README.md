@@ -43,9 +43,7 @@ calculator/
 
 ## 🌐 Live Demo
 
-https://skshabbeer.github.io/calculator/
-
-> .
+ https://skshabbeer.github.io/calculator/
 
 ## 💻 GitHub Repository
 
