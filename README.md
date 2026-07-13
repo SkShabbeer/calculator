@@ -47,7 +47,7 @@ calculator/
 
 ## 💻 GitHub Repository
 
-https://github.com/SkShabbeer/calculator/blob/main/index.html
+https://github.com/SkShabbeer/calculator
 
 ## 👨‍💻 Author
 
