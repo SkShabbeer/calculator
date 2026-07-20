@@ -47,7 +47,7 @@ calculator/
 
 ## 💻 GitHub Repository
 
-https://github.com/SkShabbeer/calculator
+https://github.com/SkShabbeer/CodeAlpha_calculator
 
 ## 👨‍💻 Author
 
